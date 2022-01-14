@@ -176,3 +176,9 @@ oldIndex = hookmetamethod(game, "__index", function(self, Index)
     
     return oldIndex(self, Index)
 end)
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "Silent Aim"; -- title of notification
+Text = "Activated"; -- bottom text
+Duration = 5; -- how long notification is on screen
+})
